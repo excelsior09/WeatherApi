@@ -7,13 +7,22 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewWeather"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewWeatherDescription"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather Information"
+        android:text="Weather Description"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_centerInParent="true"
-        android:gravity="center"/>
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewWeatherDescription"
+        android:layout_marginTop="16dp"/>
 
 </RelativeLayout>
