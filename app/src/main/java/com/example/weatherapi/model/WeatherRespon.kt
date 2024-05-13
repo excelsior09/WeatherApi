@@ -4,7 +4,6 @@ data class WeatherResponse(
     val coord: Coord,
     val weather: List<Weather>,
     val main: Main,
-    // tambahkan properti lainnya sesuai kebutuhan
 )
 
 data class Coord(
@@ -24,5 +23,4 @@ data class Main(
     val feels_like: Double,
     val temp_min: Double,
     val temp_max: Double,
-    // tambahkan properti lainnya sesuai kebutuhan
 )

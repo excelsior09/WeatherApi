@@ -15,14 +15,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
 
-    private val apiKey = "YOUR_API_KEY"
+    private val apiKey = "e0289d6d55b9f0e7039f5604f8b9a38f"
     private val weatherRepository = WeatherRepository()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val cityName = "Jakarta" // Ganti dengan kota yang diinginkan
+        val cityName = "Jakarta"
 
         weatherRepository.getWeather(cityName, apiKey, object : Callback<WeatherResponse> {
             override fun onResponse(call: Call<WeatherResponse>, response: Response<WeatherResponse>) {
